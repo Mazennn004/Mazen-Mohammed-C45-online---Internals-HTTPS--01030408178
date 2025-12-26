@@ -13,7 +13,7 @@ readStream.on('data',(chunk)=>{
     writeStream.write(chunk,(err)=>{
      if(err){
         console.log('error writing in file');
-
+        return;
      }
 
     })
